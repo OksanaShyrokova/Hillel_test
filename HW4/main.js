@@ -1,42 +1,42 @@
-let age = prompt('Your year of brith?');
+let age = prompt('Твій рік народження?');
 if (age != null) {
-    alert(`Your age ${2023- age}`)
+    alert(`Твій вік ${2023- age}`)
 }else {
-    alert('Sorry you didn\'t want to enter your year of birth')
+    alert('Шкода, що ти не захотіл ввести свій рік народження')
 }
-let city = prompt('What city do you live in?');
+let city = prompt('В якому місті ти живеш?');
 if(city != null) {
     switch (city) {
-        case 'Kyiv':
-            alert( 'You live in the capital Ukraine');
+        case 'Київ':
+            alert( 'Ти живеш у столиці України');
             break;
-        case 'london':
-            alert( 'You live in the capital England');
+        case 'Лондон':
+            alert( 'Ти живеш у столиці Англії');
             break;
-        case 'Washington':
-            alert( 'You live in the capital the United States');
+        case 'Вашингтон':
+            alert( 'Ти живеш у столиці Америки');
             break;
         default:
-            alert(`You live in ${city}`);
+            alert(`Ти живеш у місті ${city}`);
     }
 }else {
-    alert('Sorry you didn\'t want to enter your city')
+    alert('Шкода, що ти не захотів ввести своє місто')
 }
-let sport = prompt('Your favorite sport?');
+let sport = prompt('Твій улюблений вид спорту?');
 if(sport != null){
     switch (sport){
-        case 'Chess':
-            alert('Cool do you want to be like Andrey Volokiten?');
+        case 'шахи':
+            alert('Круто! Хочеш стати як Андрей Волокитин?');
             break;
-        case  'Swimming':
-            alert('Cool do you want to be like Yana Klochkova?');
+        case  'плавание ':
+            alert('Круто! Хочеш стати як Яна Клочкова?');
             break;
-        case 'Artistic gymnastics ':
-            alert('Cool do you want to be like  Lilia Podkopayeva?');
+        case 'гімнастика':
+            alert('Круто! Хочеш стати як Лилия Подкопаєва?');
             break;
         default:
-            alert(`Your favorite ${sport}`);
+            alert(`Твій улюблений вид спорту ${sport}`);
     }
 }else {
-    alert('Sorry you didn\'t want to enter your view sport');
+    alert('Шкода, що ти не захотів ввести свій улюблений вид спорту!');
 }
