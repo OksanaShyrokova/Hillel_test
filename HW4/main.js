@@ -1,42 +1,53 @@
+let resultSport = '';
+
+let resultCity = '';
+let resultAge = '';
+
 let age = prompt('Твій рік народження?');
-if (age != null) {
-    alert(`Твій вік ${2023- age}`)
-}else {
-    alert('Шкода, що ти не захотіл ввести свій рік народження')
+if (age != null && Number.isInteger(age)) {
+    resultAge = `Твій вік ${2023 - age}`;
 }
+else if (age == null) {
+    alert('Шкода, що ти не захотіл ввести свій рік народження');
+}
+
 let city = prompt('В якому місті ти живеш?');
-if(city != null) {
+if (city != null) {
     switch (city) {
         case 'Київ':
-            alert( 'Ти живеш у столиці України');
+            resultCity = 'Ти живеш у столиці України';
             break;
         case 'Лондон':
-            alert( 'Ти живеш у столиці Англії');
+            resultCity = 'Ти живеш у столиці Англії';
             break;
         case 'Вашингтон':
-            alert( 'Ти живеш у столиці Америки');
+            resultCity = 'Ти живеш у столиці Америки';
             break;
         default:
-            alert(`Ти живеш у місті ${city}`);
+            resultCity = `Ти живеш у місті ${city}`;
     }
-}else {
-    alert('Шкода, що ти не захотів ввести своє місто')
+} else if (city == null) {
+    alert('Шкода, що ти не захотів ввести своє місто');
 }
 let sport = prompt('Твій улюблений вид спорту?');
-if(sport != null){
-    switch (sport){
+if (sport != null) {
+    switch (sport) {
         case 'шахи':
-            alert('Круто! Хочеш стати як Андрей Волокитин?');
+            resultSport = 'Круто! Хочеш стати як Андрей Волокитин?';
             break;
         case  'плавание ':
-            alert('Круто! Хочеш стати як Яна Клочкова?');
+            resultSport = 'Круто! Хочеш стати як Яна Клочкова?';
             break;
         case 'гімнастика':
-            alert('Круто! Хочеш стати як Лилия Подкопаєва?');
+            resultSport = 'Круто! Хочеш стати як Лилия Подкопаєва?';
             break;
         default:
-            alert(`Твій улюблений вид спорту ${sport}`);
+            resultSport = '';
+
     }
-}else {
+} else if (sport == null) {
     alert('Шкода, що ти не захотів ввести свій улюблений вид спорту!');
 }
+
+alert(resultAge + '\n' + resultCity + '\n' + resultSport + '\n');
+
