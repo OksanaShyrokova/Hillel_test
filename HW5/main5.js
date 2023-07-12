@@ -58,7 +58,7 @@ function seven_task() {
     console.log('\n7)Вивести суму лише парних чисел в діапазоні від 30 до 80');
     let result = 0;
     for (let i = 30; i <= 80; i++) {
-        if (i % 2) {
+        if ((i % 2) === 0) {
             result += i;
         }
     }
@@ -69,7 +69,7 @@ function eight_task() {
     console.log('\n8)Вивести всі числа в діапазоні від 100 до 200 кратні 3');
     let result = [];
     for (let i = 100; i <= 200; i++) {
-        if (i % 3 === 0) {
+        if ((i % 3) === 0) {
             result.push(i);
         }
     }
@@ -90,14 +90,13 @@ function nine_to_ten_task() {
     for (let i = 2; i < number; i++) {
         if (number % i === 0) {
             result.push(i);
+              if ((i % 2) === 0) {
+               count++;
+               sum +=i;
+        }
         }
     }
-    for (let i = 0; i < result.length; i++) {
-        if (i % 2 === 0) {
-            count++;
-            sum +=i;
-        }
-    }
+    
     console.log(`Всі дільники числа ${number} :  ${result.toString()}`);
     console.log(`Кількість парних дільників :  ${count}`);
     console.log(`Сумв парних дільників :  ${sum}`);
